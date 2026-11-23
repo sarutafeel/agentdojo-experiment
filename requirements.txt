@@ -1,0 +1,6 @@
+agentdojo==0.1.35
+python-dotenv
+pandas
+tabulate
+anthropic==0.49.0  # newer SDKs break agentdojo 0.1.35 (MessageParam is no longer instantiable)
+mcp<2  # the MCP condition uses the official SDK (v1 API: low-level Server + in-memory session)
